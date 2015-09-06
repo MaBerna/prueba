@@ -1,0 +1,107 @@
+html, body{
+    margin: 0px;
+    padding: 0;
+}
+
+a{
+   text-decoration: none;
+}
+
+#contennedor{
+    position: relative;
+    width: 1024px;
+    min-height: 100%;
+}
+
+header{
+    background: #0000FF;
+    height: 70px;
+    color: #FFFFFF;
+}
+
+h1{
+    float: left;
+    margin: 0px 60px 0px 15px;
+    padding-top: 16px;    
+}
+
+header a{
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    color: #FFFFFF;
+    
+}
+
+.principal ul{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.principal ul li{
+    float: left;
+    list-style: none;
+    margin-right: 15px;
+    width: 80px;
+    height: 20px;
+    margin-top: 50px;
+    background-color: #FFFFFF;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+}
+
+.principal ul li a{
+    color: #000000;
+    vertical-align: middle;
+}
+
+#contenedor section{
+    clear: both;
+    margin-top: 15px;
+}
+
+
+article div{
+    float: left;
+    width: 48%;
+}
+
+article div p{
+    margin: 0px 15px 0px 15px;
+}
+
+footer{
+    clear: both;
+    background: #0000FF;
+    position: absolute;
+    bottom: 0px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 35px;
+    color:#FFFFFF;
+    width: 100%;
+    height: 35px;
+}
+
+footer p{
+    margin: 0px;
+}
+
+/* Muestra la fecha a la izq y la hora a la derecha */
+
+#reloj{
+    float:right;
+}
+
+#fecha, #reloj{
+    margin-bottom: 10px;
+}
+
+p#reloj + p{ /*Con el + p indicamos que nos referimos al elemento p que hay a continuación de elemento p con id reloj */
+    clear: both;
+}
+
+/* Fin */
+

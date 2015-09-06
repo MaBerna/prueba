@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto</title>
+        <link href="css/formulario.css" rel="stylesheet" />
+        <script                         src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/formulario.js" ></script>
+    </head>
+    <body>
+        <div id="contenedor">
+        <form action="datoscontacto.php" method="post">
+            <fieldset>
+                <legend>Formulario de contacto</legend>
+                   <div> <label for="nombre">Nombre</label></div>
+                        <div><input type="text" name="nombre" id="nombre" placeholder="Pon aqui tu nombre" required  /></div>
+                        <div><label for="correo">Correo</label></div>
+                        <div><input type="email" name="correo" id="correo" placeholder="Pon aqui tu correo" required /></div>
+                   <div>
+                       <label for="consulta">Consulta</label></br>
+                       <textarea name="consulta" id="consulta" rows="10" cols="40" onclick="limpia()" >Escribe tu consulta...
+                       </textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar" />
+                        <input type="reset" value="Borrar" />
+                    </div>
+            </fieldset>
+
+        </form>
+        </div>
+    
+    
+    </body>
+</html>
